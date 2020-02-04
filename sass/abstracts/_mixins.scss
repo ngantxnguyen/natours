@@ -5,3 +5,20 @@
     display: table;
   }
 }
+
+@mixin gradient-background($bg-url) {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)),
+    url($bg-url);
+  background-size: cover;
+}
+
+@mixin gradient-text {
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  -webkit-background-clip: text;
+  color: transparent;
+}
