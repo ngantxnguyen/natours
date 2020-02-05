@@ -6,6 +6,13 @@
   }
 }
 
+@mixin center-vertical-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin gradient-background-img($bg-url) {
   background-image:
     linear-gradient(
