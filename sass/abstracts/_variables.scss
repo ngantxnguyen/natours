@@ -13,6 +13,7 @@ $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
 $color-grey-dark: #777;
+$color-grey-dark-2: #999;
 $color-white: #fff;
 $color-black: #000;
 
@@ -22,7 +23,13 @@ $default-font-size: 1.6rem;
 
 
 // SHADOW
-$shadow-1: 0 1.5rem 4rem rgba($color: $color-black, $alpha: .15);
+$shadow-0: 0 1rem 2rem rgba($color-black,.1);
+$shadow-1: 0 1.5rem 4rem rgba($color-black,.15);
+$shadow-2: 0 1.5rem 4rem rgba($color-black,.3);
+
+// BORDER RADIUS
+$border-radius-small: 2px;
+$border-radius-default: 3px;
 
 // GRID
 $grid-width: 114rem;
