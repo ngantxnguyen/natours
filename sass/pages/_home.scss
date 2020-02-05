@@ -1,16 +1,23 @@
 .section-about {
   background-color: $color-grey-light-1;
   padding: 25rem 0;
-  margin-top: $background-gap;
+  margin-top: -20vh;
 }
 
 .section-features {
   padding: 20rem 0;
-  @include gradient-background('../img/nat-4.jpg');
+  margin-top: -10rem;
+  @include gradient-background-img('../img/nat-4.jpg');
 
-  transform: skewY(-7deg) translateY($background-gap);
+  transform: skewY(-7deg);
 
   & > * {
     transform: skewY(7deg)
   }
+}
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 20rem 0 15rem 0;
+  margin-top: -8rem;
 }

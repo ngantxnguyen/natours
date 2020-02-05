@@ -6,7 +6,7 @@
   }
 }
 
-@mixin gradient-background($bg-url) {
+@mixin gradient-background-img($bg-url) {
   background-image:
     linear-gradient(
       to right bottom,
