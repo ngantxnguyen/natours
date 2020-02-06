@@ -7,11 +7,26 @@
 }
 
 html {
-  // This is what defines 1rem is
-  font-size: 50%;
+  // This is what defines 1rem is = 10px
+  font-size: 62.5%; //  of the browser/root font-size
   scroll-behavior: smooth;
+
+  @include respond(big-desktop) { // screen at least 1800px
+    font-size: 75%; // 1 rem = 12, 12/16
+  }
+  @include respond(tab-land) {  // screen max 1200px
+    font-size: 56.25%;   // 1 rem = 9 px, 9/16 = .5625
+  }
+  @include respond(tab-port) {  // screen max 900px
+    font-size: 50%;   // 1 rem = 8 px, 8/16 = .5
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {  // screen max 900px
+    padding: 0;
+  }
 }

@@ -7,10 +7,18 @@
   box-shadow: $shadow-1;
   transition: transform .3s;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
     @include gradient-text;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {
