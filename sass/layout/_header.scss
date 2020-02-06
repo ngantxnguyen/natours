@@ -1,10 +1,15 @@
 .header {
   height: 95vh;
-  @include gradient-background-img('../img/hero.jpg');
+  @include gradient-background-img('../img/hero-small.jpg');
   background-position: top;
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @media  (min-resolution: 192dpi) and (min-width: 37.5em),
+          (min-width: 125em) {
+    @include gradient-background-img('../img/hero.jpg');
+  }
 
   @include respond(phone) {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
